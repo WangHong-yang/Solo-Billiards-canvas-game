@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Solo Billiards</title>
+	<link rel="stylesheet" type="text/css" href="taiqiu.css">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="taiqiu.js"></script>
+</head>
+<body>
+	<div id="game">
+		<div id="gameUI">
+			<div id="gameIntro">
+				<h1>Solo Billiards</h1>
+				<p>Welcome to enjoy Solo Billiards, U'll love it!</p>
+				<p><a id="gamePlay" class="button" href="">Play</a></p>
+			</div>
+			<div id="gameStats">
+				<p>Billiards: <span id="gameRemaining"></span></p>
+				<p>Clicks: <span class="gameScore"></span></p>
+				<p><a id="btn-reset" class="gameReset" href="">Reset</a></p>
+			</div>
+			<div id="gameComplete">
+				<h1>You Win!</h1>
+				<p>Congradulations! You complete Solo Billiards in <span class="gameScore"></span> clicks.</p>
+				<p><a class="gameReset button" href="">Play Again</a></p>
+			</div>
+		</div>
+		<canvas id="gameCanvas" width="350" height="600">
+			<!-- Used for browsers which don't support canvas tag -->
+			Sorry! Your browser doesn't support this game. Please upgrate your browser.
+		</canvas>
+	</div>
+</body>
+</html>
